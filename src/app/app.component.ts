@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as screenfull from 'screenfull';
+import * as toastr from 'toastr';
 
 const KANA_MAP = [];
 KANA_MAP['Digit0'] = 'わ';
@@ -59,6 +61,7 @@ export class AppComponent implements OnInit {
   kana = '';
 
   ngOnInit() {
+    toastr.info('画面をクリックすると全画面になります');
     document.addEventListener('keydown', (ev) => {
       this.kana = KANA_MAP[ev.code] || '';
       if (this.kana !== '') {
@@ -68,5 +71,11 @@ export class AppComponent implements OnInit {
         speechSynthesis.speak(utter);
       }
     });
+
+
+  }
+
+  onClick() {
+    screenfull.request();
   }
 }

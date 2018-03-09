@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build --prod --base-href /kanatype/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -24,6 +24,8 @@
     "core-js": "^2.4.1",
     "normalize.css": "^8.0.0",
     "rxjs": "^5.5.6",
+    "screenfull": "^3.3.2",
+    "toastr": "^2.1.4",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {

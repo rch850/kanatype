@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "normalize.css";
+@import '../node_modules/toastr/build/toastr.css'; /* You need style and css loader installed and set */
 
 html {
   height: 100%;
