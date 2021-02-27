@@ -24,7 +24,7 @@
     "core-js": "^2.6.2",
     "normalize.css": "^8.0.0",
     "rxjs": "^6.5.5",
-    "screenfull": "^4.0.0",
+    "screenfull": "^5.1.0",
     "toastr": "^2.1.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
