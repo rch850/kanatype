@@ -17,7 +17,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    toastr.info('画面をクリックすると全画面になります');
+    if (screenfull.isEnabled) {
+      toastr.info('画面をクリックすると全画面になります');
+    }
     fromEvent(document, 'keydown')
     .pipe(
       map((ev: KeyboardEvent) => this.keyboard.convert(ev)),
@@ -34,6 +36,8 @@ export class AppComponent implements OnInit {
   }
 
   onClick() {
-    screenfull.request();
+    if (screenfull.isEnabled) {
+      screenfull.request()
+    }
   }
 }
