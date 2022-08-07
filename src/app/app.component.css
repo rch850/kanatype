@@ -1,9 +1,7 @@
 .kana {
   height: 100%;
   font-size: 80vh;
-  font-family: 'Rounded Mplus 1c';
-  /* font-family: 'Mplus 1p'; */
-  /* font-family: 'Nico Moji'; */
+  font-family: 'Klee One';
   font-weight: bold;
   display: flex;
   align-items: center;
