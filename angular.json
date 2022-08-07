@@ -107,7 +107,6 @@
       }
     }
   },
-  "defaultProject": "kanatype",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
