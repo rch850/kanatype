@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class KeyboardService {
 
-  readonly KANA_MAP = [];
+  readonly KANA_MAP: Record<string, string> = {};
 
   constructor() {
 

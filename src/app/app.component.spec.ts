@@ -1,14 +1,11 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { KeyboardService } from './keyboard.service';
+
 describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
-      ],
-      providers: [
-        KeyboardService
       ]
     }).compileComponents();
   }));

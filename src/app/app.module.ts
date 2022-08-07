@@ -13,9 +13,6 @@ import { KeyboardService } from './keyboard.service';
   imports: [
     BrowserModule
   ],
-  providers: [
-    KeyboardService
-  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
